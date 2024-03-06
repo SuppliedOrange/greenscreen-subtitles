@@ -49,4 +49,4 @@ It should work as intended.
 
 ## Notes:
 I made this for myself, for my specific use case- which means you may encounter problems. Make an [issue](https://github.com/SuppliedOrange/greenscreen-subtitles/issues/new) if you run into problems along with your device info<br>
-I have also found that you can simply use text files on OBS instead of this elaborate method.
+You may also simply use text files instead of this method unless you want the freedom to modify your text and accept requests from webservers.
