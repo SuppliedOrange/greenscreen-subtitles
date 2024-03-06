@@ -12,9 +12,9 @@ Backup Links of media resources: (https://i.imgur.com/l0cxH8c.gif, https://i.img
 I use this on OBS for streaming with a chroma key. My speech is converted to text and is sent to this app.
 
 # How to build:
-Download the repo, run `npm install` in the directory.
-Run `npm install electron -g` and install electron globally.
-Run `electron .` in the directory, and you're done.
+Download the repo, run `npm install` in the directory. <br>
+Run `npm install electron -g` and install electron globally. <br>
+Run `electron .` in the directory to start the server.
 
 # How to use: 
 Send a request to `http://127.0.0.1:4999/update_subtitles` with a post request in the form of
