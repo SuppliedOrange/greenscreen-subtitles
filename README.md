@@ -1,5 +1,5 @@
 # Green Screen Subtitles on Electron
-This hosts an electron app on your pc with a green screen and subtitles that be updated via an endpoint.
+This hosts an electron app on your pc with a green screen and subtitles/any text that be updated via an endpoint.
 
 # My use case:
 ![ezgif-7-0bbbd241f6](https://github.com/SuppliedOrange/greenscreen-subtitles/assets/70258998/8a7b4ea1-17e9-41c5-95b6-03fb645961a1)
