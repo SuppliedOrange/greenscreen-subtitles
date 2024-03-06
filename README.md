@@ -49,4 +49,4 @@ It should work as intended.
 
 ## Notes:
 I made this for myself, for my specific use case- which means you may encounter problems. Make an [issue](https://github.com/SuppliedOrange/greenscreen-subtitles/issues/new) if you run into problems along with your device info<br>
-You may also simply use text files instead of this method unless you want the freedom to modify your text and accept requests from webservers.
+You may also simply use text files instead of this method unless you want the freedom to use effects on your texts
