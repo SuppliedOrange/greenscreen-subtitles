@@ -47,5 +47,5 @@ It should work as intended.
 
 ## Notes:
 I made this for myself, for my specific use case- which means you may encounter problems. Salvage, fix and use what you need.<br>
-If you run into anything weird, let me know by making an [issue](https://github.com/SuppliedOrange/greenscreen-subtitles/issues/new) on this repository
+If you run into anything weird, let me know by making an [issue](https://github.com/SuppliedOrange/greenscreen-subtitles/issues/new) on this repository <br>
 I have also found that you can simply use text files on OBS instead of this elaborate method.
