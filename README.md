@@ -33,12 +33,13 @@ try: res = requests.post( url, json={ 'text': text } )
 except ConnectionError:
     return {"success": False, "error": "Subtitle server is not alive" }
 except Exception as e:
-    return {"success": False, "error": "Subtitle server hit an error!\n" + str(e)}
+    return {"success": False, "error": "Error making request to subtitle server\n" + str(e)}
 
 try:
   if res["success"]: print("Finish!")
   else: print(res["error"])
 except KeyError: print("Subtitle server returned malformed, internal error maybe?")
+except TypeError: print("Subtitle server returned nothing, internal error maybe?")
 ```
 
 # OBS
