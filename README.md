@@ -13,7 +13,7 @@ I use this on OBS for streaming with a chroma key. My speech is converted to tex
 
 # How to build:
 Download the repo, run `npm install` in the directory.
-Run `npm install -g` and install electron globally.
+Run `npm install electron -g` and install electron globally.
 Run `electron .` in the directory, and you're done.
 
 # How to use: 
