@@ -12,9 +12,9 @@ Backup Links of media resources: [1](https://i.imgur.com/l0cxH8c.gif) [2](https:
 I use this on OBS for streaming with a chroma key. My speech is converted to text and is sent to this app.
 
 # How to build:
-Download the repo, run `npm install` in the directory. <br>
-Run `npm install electron -g` and install electron globally. <br>
-Run `electron .` in the directory to start the server.
++ Download the repo, run `npm install` in the directory. <br>
++ Run `npm install electron -g` and install electron globally. <br>
++ Run `electron .` in the directory to start the server.
 
 # How to use: 
 Send a request to `http://127.0.0.1:4999/update_subtitles` with a post request in the form of
@@ -28,19 +28,22 @@ This is how I do it in python:
 ```py
 import requests
 url = 'http://127.0.0.1:4999/update_subtitles'
-try: res = requests.post( url, json={ 'text': text } ).json()
+try: 
+    res = requests.post( url, json={ 'text': text } )
+    res = res.json()
 
-except ConnectionError:
-    return {"success": False, "error": "Subtitle server is not alive" }
-except Exception as e:
-    return {"success": False, "error": "Error making request to subtitle server\n" + str(e)}
+    try:
+        if res["success"]: print("Finish!")
+        else: print(res["error"])
 
-try:
-  if res["success"]: print("Finish!")
-  else: print(res["error"])
-except KeyError: print("Subtitle server returned malformed, internal error maybe?")
-except TypeError: print("Subtitle server returned nothing, internal error maybe?")
+    except Exception as e: print("Error while reading data recieved from server\n" + str(e))
+
+except requests.ConnectionError: print( "Could not connect to subtitle server. Is the server running?" )
+except Exception as e: print("Could not establish connection with subtitle server\n" + str(e))
 ```
+Use `setter.py` included with the repo to have a cli-based interface specifically for this.
++ `setter.py -t "new text"` updates the text with your args
++ `setter.py -u` runs in interactive mode
 
 # OBS
 Choose window capture and capture the electron app (should show up as `[electron.exe]: Electron`)
