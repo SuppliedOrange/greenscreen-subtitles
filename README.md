@@ -3,11 +3,11 @@ This hosts an electron app on your pc with a green screen and subtitles/any text
 
 # My use case:
 ![ezgif-7-0bbbd241f6](https://github.com/SuppliedOrange/greenscreen-subtitles/assets/70258998/8a7b4ea1-17e9-41c5-95b6-03fb645961a1)
-![brave_Eqqv8rFU6A](https://github.com/SuppliedOrange/greenscreen-subtitles/assets/70258998/e6e269d8-d70e-4251-a610-bad017add9f2)
+![NVIDIA_Share_gji0puXL50](https://github.com/SuppliedOrange/greenscreen-subtitles/assets/70258998/7b8f415f-6359-42e1-90de-5568d498821e)
 ![image](https://github.com/SuppliedOrange/greenscreen-subtitles/assets/70258998/12f29517-7e28-4574-9264-24e2185fb4e8)
 
 
-Backup Links of media resources: (https://i.imgur.com/l0cxH8c.gif, https://i.imgur.com/EJItnQZ.png, https://i.imgur.com/rBfbTGR.gif)
+Backup Links of media resources: [1](https://i.imgur.com/l0cxH8c.gif) [2](https://i.imgur.com/3twdxFe.gif) [3](https://i.imgur.com/rBfbTGR.gif)
 
 I use this on OBS for streaming with a chroma key. My speech is converted to text and is sent to this app.
 
