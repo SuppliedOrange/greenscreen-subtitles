@@ -28,7 +28,7 @@ This is how I do it in python:
 ```py
 import requests
 url = 'http://127.0.0.1:4999/update_subtitles'
-try: res = requests.post( url, json={ 'text': text } )
+try: res = requests.post( url, json={ 'text': text } ).json()
 
 except ConnectionError:
     return {"success": False, "error": "Subtitle server is not alive" }
