@@ -1,9 +1,9 @@
 const { app, BrowserWindow } = require('electron');
 const express = require('express');
 const bodyParser = require('body-parser');
-const serverApp = express();
 const http = require('http');
 
+const serverApp = express();
 // Parse JSON bodies for this app. 
 serverApp.use(bodyParser.json());
 
