@@ -25,6 +25,7 @@ serverApp.post('/update_subtitles', (req, res) => {
 
   const subtitles = req.body.text;
   try {
+    // Communicate with the web page through IPC.
     mainWindow.webContents.send('subtitle_update', subtitles);
     res.send({
       success: true
