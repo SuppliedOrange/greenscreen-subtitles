@@ -36,7 +36,8 @@ const { ipcRenderer } = require('electron');
 const subtitle = document.getElementById('subtitle');
 
 ipcRenderer.on('subtitle_update', (event, content) => {
-  // Update the content of your page
+    // Listen for requests from the main process through IPC.
+    // https://www.electronjs.org/docs/latest/api/ipc-renderer
     
     subtitle.textContent = content;  
     subtitle.style.fontSize = '100px';
