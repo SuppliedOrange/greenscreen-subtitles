@@ -1,3 +1,8 @@
+# Branches
+### <i> [Electron Branch](https://github.com/SuppliedOrange/greenscreen-subtitles/tree/main): Launches an electron app (for window captures) </i>
+^ You are here
+### <i> [Website with websockets branch](https://github.com/SuppliedOrange/greenscreen-subtitles/tree/main): Initializes as a website with websockets (for browser sources) </i>
+
 # Green Screen Subtitles on Electron
 This hosts an electron app on your pc with a green screen and subtitles/any text that be updated via an endpoint.
 
