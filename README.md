@@ -1,20 +1,24 @@
-# Green Screen Subtitles on Electron
-This hosts an electron app on your pc with a green screen and subtitles/any text that be updated via an endpoint.
+# Branches
+### <i> [Electron Branch](https://github.com/SuppliedOrange/greenscreen-subtitles/tree/main): Launches an electron app (for window captures) </i>
+
+### <i> [Website with websockets branch](https://github.com/SuppliedOrange/greenscreen-subtitles/tree/main): Initializes as a website with websockets (for browser sources) </i>
+^ You are here
+
+# Green Screen Subtitles on a Website with Websockets
+This serves a website with a green screen and subtitles/any text that be updated via an endpoint.
 
 # My use case:
 ![ezgif-7-0bbbd241f6](https://github.com/SuppliedOrange/greenscreen-subtitles/assets/70258998/8a7b4ea1-17e9-41c5-95b6-03fb645961a1)
 ![NVIDIA_Share_gji0puXL50](https://github.com/SuppliedOrange/greenscreen-subtitles/assets/70258998/7b8f415f-6359-42e1-90de-5568d498821e)
-![image](https://github.com/SuppliedOrange/greenscreen-subtitles/assets/70258998/12f29517-7e28-4574-9264-24e2185fb4e8)
+![ZYn3K6X](https://github.com/user-attachments/assets/1e464fb7-7ae2-40bd-bfb7-a35627f071ae)
 
-
-Backup Links of media resources: [1](https://i.imgur.com/l0cxH8c.gif) [2](https://i.imgur.com/3twdxFe.gif) [3](https://i.imgur.com/rBfbTGR.gif)
+Backup Links of media resources: [1](https://i.imgur.com/l0cxH8c.gif) [2](https://i.imgur.com/3twdxFe.gif) [3](https://i.imgur.com/ZYn3K6X.png)
 
 I use this on OBS for streaming with a chroma key. My speech is converted to text and is sent to this app.
 
 # How to build:
 + Download the repo, run `npm install` in the directory. <br>
-+ Run `npm install electron -g` and install electron globally. <br>
-+ Run `electron .` in the directory to start the server.
++ Run `node index.js` or `npm start` in the directory to start the server.
 
 # How to use: 
 Send a request to `http://127.0.0.1:4999/update_subtitles` with a post request in the form of
@@ -46,10 +50,14 @@ Use `setter.py` included with the repo to have a cli-based interface specificall
 + `setter.py -u` runs in interactive mode
 
 # OBS
-Choose window capture and capture the electron app (should show up as `[electron.exe]: Electron`)
-Go to filters and enable chroma key and crop/pad the top by 24.
-It should work as intended.
-![image](https://github.com/SuppliedOrange/greenscreen-subtitles/assets/70258998/cfbb6717-8ce9-4aaf-8cd4-14fdd02923a1)
++ Choose Browser Source and set `http://localhost:4999` as the URL. Adjust size to whatever suits you, I prefer *w/h 1279x206*
++ Go to filters and enable chroma key.
++ Start the server and it should show you the subtitles.
+
+<br>
+
+![image](https://github.com/user-attachments/assets/1703081e-55ad-4d2a-9fcf-398d66fdf40e)
+Backup link: [1](https://i.imgur.com/95TJzro.png)
 
 ## Notes:
 I made this for myself, for my specific use case- which means you may encounter problems. Make an [issue](https://github.com/SuppliedOrange/greenscreen-subtitles/issues/new) if you run into problems along with your device info<br>
