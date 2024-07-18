@@ -27,18 +27,13 @@
 ...
 </h1>
 
-
-
 <script>
 
-const { ipcRenderer } = require('electron');
-
+const socket = io();
 const subtitle = document.getElementById('subtitle');
 
-ipcRenderer.on('subtitle_update', (event, content) => {
-    // Listen for requests from the main process through IPC.
-    // https://www.electronjs.org/docs/latest/api/ipc-renderer
-    
+socket.on("subtitle_update", (content) => {
+    // Listen for requests from the server through a web socket.    
     subtitle.textContent = content;  
     subtitle.style.fontSize = '100px';
     while (
