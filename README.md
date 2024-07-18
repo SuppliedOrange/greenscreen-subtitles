@@ -1,7 +1,7 @@
 # Branches
 ### <i> [Electron Branch](https://github.com/SuppliedOrange/greenscreen-subtitles/tree/main): Launches an electron app (for window captures) </i>
 ^ You are here
-### <i> [Website with websockets branch](https://github.com/SuppliedOrange/greenscreen-subtitles/tree/main): Initializes as a website with websockets (for browser sources) </i>
+### <i> [Website with websockets branch](https://github.com/SuppliedOrange/greenscreen-subtitles/tree/websocket): Initializes as a website with websockets (for browser sources) </i>
 
 # Green Screen Subtitles on Electron
 This hosts an electron app on your pc with a green screen and subtitles/any text that be updated via an endpoint.
@@ -19,7 +19,7 @@ I use this on OBS for streaming with a chroma key. My speech is converted to tex
 # How to build:
 + Download the repo, run `npm install` in the directory. <br>
 + Run `npm install electron -g` and install electron globally. <br>
-+ Run `electron .` in the directory to start the server.
++ Run `electron .` or `npm start` in the directory to start the server.
 
 # How to use: 
 Send a request to `http://127.0.0.1:4999/update_subtitles` with a post request in the form of
